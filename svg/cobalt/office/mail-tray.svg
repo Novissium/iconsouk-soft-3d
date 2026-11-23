@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-mail-tray-s3-cobalt-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b95f1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="isk-mail-tray-s3-cobalt-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-mail-tray-s3-cobalt-f)">
+    <path fill="url(#isk-mail-tray-s3-cobalt-g)" fill-rule="evenodd" d="M21.34 10.42 17.47 6.54 17.20 6.37 16.70 6.34 7.07 6.34 6.80 6.40 6.37 6.70 2.53 10.53 2.39 10.75 2.34 11.00 2.34 17.93 2.39 18.18 2.53 18.39 2.68 18.51 3.23 18.66 21.00 18.66 21.25 18.61 21.42 18.51 21.55 18.37 21.63 18.19 21.66 18.00 21.66 11.07 21.61 10.81ZM4.15 11.42 3.98 11.39 3.85 11.30 3.73 11.04 3.80 10.77 3.91 10.65 4.06 10.59 7.89 10.59 8.25 10.73 8.40 10.85 9.65 12.98 14.35 12.98 15.60 10.85 15.75 10.73 16.07 10.60 19.90 10.58 20.15 10.70 20.24 10.84 20.27 11.00 20.24 11.16 20.15 11.30 19.90 11.42 16.23 11.43 15.06 13.43 14.80 13.74 14.56 13.82 9.36 13.81 9.17 13.72 8.91 13.39 7.77 11.43ZM15.06 4.66 15.31 4.58 15.47 4.47 15.61 4.25 15.66 4.00 15.61 3.75 15.47 3.53 15.31 3.42 15.06 3.34 8.94 3.34 8.69 3.42 8.53 3.53 8.42 3.69 8.34 3.94 8.37 4.19 8.49 4.42 8.69 4.58 8.94 4.66Z"/>
+  </g>
+</svg>

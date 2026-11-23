@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-sailboat-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-sailboat-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-sailboat-s3-gold-f)">
+    <path fill="url(#isk-sailboat-s3-gold-g)" fill-rule="evenodd" d="M2.40 16.28 4.90 20.52 5.15 20.86 5.42 21.03 5.62 21.06 18.29 21.06 18.47 21.03 18.64 20.96 19.03 20.63 21.52 16.42 21.59 16.24 21.61 16.04 21.54 15.79 21.38 15.58 21.05 15.39 20.80 15.34 3.00 15.34 2.80 15.37 2.57 15.50 2.44 15.64 2.35 15.89 2.35 16.09ZM12.74 13.71 12.77 14.15 12.87 14.38 13.11 14.59 13.41 14.66 19.48 14.66 19.73 14.58 20.00 14.37 20.12 14.21 20.19 13.96 20.16 13.70 20.08 13.53 13.94 4.63 13.70 4.41 13.46 4.34 13.20 4.37 12.98 4.49 12.82 4.69 12.74 4.94ZM10.88 2.92 4.49 13.57 4.43 13.88 4.50 14.22 4.63 14.43 4.82 14.59 5.13 14.66 11.52 14.66 11.83 14.54 12.19 14.15 12.26 13.85 12.26 2.93 12.18 2.68 12.06 2.53 11.84 2.38 11.58 2.34 11.32 2.40 11.16 2.51Z"/>
+  </g>
+</svg>

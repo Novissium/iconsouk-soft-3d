@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-keyboard-access-s3-holo-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bea5f1"/>
+      <stop offset="1" stop-color="#9F7AEA"/>
+    </linearGradient>
+    <filter id="isk-keyboard-access-s3-holo-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-keyboard-access-s3-holo-f)">
+    <path fill="url(#isk-keyboard-access-s3-holo-g)" fill-rule="evenodd" d="M4.97 5.34 4.23 5.40 3.79 5.51 3.20 5.77 2.90 5.98 2.61 6.27 2.37 6.61 2.11 7.20 2.00 7.64 1.94 8.41 1.96 16.01 2.09 16.76 2.26 17.18 2.60 17.72 2.93 18.04 3.23 18.24 3.83 18.50 4.66 18.65 19.19 18.66 19.95 18.56 20.65 18.31 21.03 18.07 21.51 17.59 21.72 17.23 21.86 16.90 21.96 16.54 22.05 15.82 22.06 8.19 21.95 7.42 21.70 6.73 21.45 6.35 20.97 5.88 20.61 5.67 20.28 5.53 19.60 5.38 19.15 5.34ZM14.30 12.30 11.70 14.90 11.56 14.99 11.40 15.02 11.20 14.97 11.03 14.80 10.98 14.56 11.05 14.37 12.99 12.42 5.96 12.42 5.70 12.30 5.61 12.16 5.58 12.00 5.61 11.84 5.70 11.70 5.96 11.58 12.99 11.58 11.05 9.63 10.98 9.44 11.03 9.20 11.20 9.03 11.40 8.98 11.56 9.01 11.70 9.10 14.32 11.73 14.42 12.00 14.39 12.16ZM15.98 15.04 15.98 8.96 16.03 8.80 16.13 8.68 16.28 8.60 16.44 8.58 16.70 8.70 16.82 8.96 16.82 15.04 16.70 15.30 16.56 15.39 16.40 15.42 16.24 15.39 16.10 15.30Z"/>
+  </g>
+</svg>

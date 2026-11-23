@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-solar-panel-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-solar-panel-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-solar-panel-s3-gold-f)">
+    <path fill="url(#isk-solar-panel-s3-gold-g)" fill-rule="evenodd" d="M5.47 3.35 5.28 3.42 5.12 3.54 4.96 3.83 2.39 13.74 2.37 14.00 2.47 14.25 2.71 14.48 3.01 14.63 3.20 14.66 11.34 14.66 11.34 19.74 8.00 19.74 7.81 19.77 7.63 19.85 7.49 19.98 7.39 20.15 7.34 20.34 7.35 20.53 7.42 20.71 7.53 20.87 7.69 20.98 8.00 21.06 16.00 21.06 16.19 21.03 16.37 20.95 16.51 20.82 16.61 20.65 16.66 20.34 16.61 20.15 16.51 19.98 16.37 19.85 16.19 19.77 16.00 19.74 12.66 19.74 12.66 14.66 20.96 14.66 21.27 14.58 21.42 14.47 21.54 14.31 21.62 14.00 21.57 13.58 19.07 3.97 19.00 3.79 18.87 3.64 18.56 3.42 18.24 3.34ZM11.58 13.19 11.58 9.42 5.10 9.42 4.90 9.35 4.77 9.20 4.72 8.96 4.79 8.77 4.94 8.63 5.14 8.58 11.58 8.58 11.58 4.77 11.70 4.51 11.84 4.42 12.00 4.39 12.16 4.42 12.30 4.51 12.42 4.77 12.42 8.58 18.86 8.58 19.10 8.65 19.23 8.80 19.28 9.00 19.23 9.20 19.10 9.35 18.90 9.42 12.42 9.42 12.41 13.27 12.35 13.42 12.23 13.54 11.96 13.61 11.70 13.49 11.61 13.35Z"/>
+  </g>
+</svg>

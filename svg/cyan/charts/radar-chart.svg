@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-radar-chart-s3-cyan-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69cfe4"/>
+      <stop offset="1" stop-color="#22B8D8"/>
+    </linearGradient>
+    <filter id="isk-radar-chart-s3-cyan-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-radar-chart-s3-cyan-f)">
+    <path fill="url(#isk-radar-chart-s3-cyan-g)" fill-rule="evenodd" d="M11.84 2.36 3.87 6.93 3.72 7.04 3.62 7.20 3.54 7.50 3.54 16.50 3.62 16.80 3.72 16.96 3.87 17.07 11.67 21.57 11.84 21.64 12.03 21.66 12.33 21.57 20.13 17.07 20.35 16.86 20.43 16.69 20.46 16.50 20.46 7.50 20.43 7.31 20.35 7.14 20.13 6.93 12.27 2.40 12.09 2.35ZM11.82 6.62 11.99 6.58 12.19 6.63 17.02 9.14 17.14 9.23 17.31 9.46 17.39 9.69 16.01 15.08 15.95 15.22 15.56 15.50 12.39 17.26 11.94 17.38 11.74 17.34 6.83 14.99 6.66 14.82 6.60 14.59 7.55 9.49 7.75 9.11 7.90 8.97ZM7.47 14.36 11.97 16.52 12.03 16.50 15.24 14.71 16.51 9.82 12.01 7.48 8.42 9.64 8.37 9.72Z"/>
+  </g>
+</svg>

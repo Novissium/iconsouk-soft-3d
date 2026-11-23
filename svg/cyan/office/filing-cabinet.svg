@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-filing-cabinet-s3-cyan-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69cfe4"/>
+      <stop offset="1" stop-color="#22B8D8"/>
+    </linearGradient>
+    <filter id="isk-filing-cabinet-s3-cyan-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-filing-cabinet-s3-cyan-f)">
+    <path fill="url(#isk-filing-cabinet-s3-cyan-g)" fill-rule="evenodd" d="M19.65 19.82 19.64 4.02 19.54 3.59 19.38 3.23 19.16 2.93 18.68 2.57 18.35 2.44 17.93 2.36 6.35 2.34 5.95 2.37 5.53 2.48 5.12 2.69 4.80 2.97 4.57 3.31 4.44 3.65 4.35 4.18 4.34 19.55 4.36 19.98 4.46 20.41 4.65 20.82 4.92 21.15 5.25 21.39 5.58 21.54 6.12 21.65 17.60 21.66 18.05 21.63 18.47 21.52 18.88 21.31 19.20 21.03 19.43 20.69 19.56 20.35ZM10.00 5.58 14.04 5.58 14.20 5.63 14.32 5.73 14.40 5.88 14.42 6.04 14.30 6.30 14.04 6.42 9.96 6.42 9.80 6.37 9.68 6.27 9.60 6.12 9.58 5.96 9.70 5.70 9.84 5.61ZM18.23 9.42 5.81 9.42 5.65 9.39 5.51 9.30 5.42 9.16 5.39 9.00 5.42 8.84 5.51 8.70 5.65 8.61 5.81 8.58 18.19 8.58 18.35 8.61 18.49 8.70 18.58 8.84 18.61 9.00 18.58 9.16 18.49 9.30ZM10.00 11.58 14.04 11.58 14.20 11.63 14.32 11.73 14.40 11.88 14.42 12.04 14.30 12.30 14.04 12.42 9.96 12.42 9.80 12.37 9.68 12.27 9.60 12.12 9.58 11.96 9.70 11.70 9.84 11.61ZM18.27 15.41 5.81 15.42 5.65 15.39 5.51 15.30 5.42 15.16 5.39 15.00 5.42 14.84 5.51 14.70 5.65 14.61 5.81 14.58 18.19 14.58 18.35 14.61 18.49 14.70 18.61 14.96 18.54 15.23 18.42 15.35ZM9.96 17.58 14.04 17.58 14.20 17.63 14.32 17.73 14.40 17.88 14.42 18.04 14.30 18.30 14.04 18.42 9.96 18.42 9.70 18.30 9.61 18.16 9.58 18.00 9.61 17.84 9.70 17.70Z"/>
+  </g>
+</svg>

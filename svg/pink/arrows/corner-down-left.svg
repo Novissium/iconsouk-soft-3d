@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-corner-down-left-s3-pink-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f385a7"/>
+      <stop offset="1" stop-color="#EE4B7E"/>
+    </linearGradient>
+    <filter id="isk-corner-down-left-s3-pink-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-corner-down-left-s3-pink-f)">
+    <path fill="url(#isk-corner-down-left-s3-pink-g)" fill-rule="evenodd" d="M19.33 10.38 19.27 11.00 19.16 11.55 19.00 12.02 18.68 12.62 18.26 13.09 17.92 13.35 17.52 13.56 17.06 13.73 16.23 13.89 15.60 13.94 5.99 13.94 9.55 10.37 9.63 10.19 9.66 10.00 9.63 9.81 9.55 9.63 9.37 9.45 9.19 9.37 9.00 9.34 8.81 9.37 8.53 9.53 3.93 14.13 3.82 14.29 3.75 14.47 3.77 14.79 3.93 15.07 8.53 19.67 8.75 19.81 9.00 19.86 9.31 19.78 9.47 19.67 9.58 19.51 9.65 19.33 9.66 19.14 9.55 18.83 5.99 15.26 16.03 15.24 17.08 15.09 17.73 14.90 18.33 14.64 18.87 14.30 19.16 14.07 19.56 13.65 19.78 13.35 20.08 12.84 20.43 11.90 20.62 10.84 20.66 10.05 20.66 3.94 20.61 3.75 20.47 3.53 20.25 3.39 20.06 3.34 19.81 3.37 19.58 3.49 19.42 3.69 19.34 3.94Z"/>
+  </g>
+</svg>

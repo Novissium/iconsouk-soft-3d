@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-redo-s3-pink-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f385a7"/>
+      <stop offset="1" stop-color="#EE4B7E"/>
+    </linearGradient>
+    <filter id="isk-redo-s3-pink-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-redo-s3-pink-f)">
+    <path fill="url(#isk-redo-s3-pink-g)" fill-rule="evenodd" d="M14.29 5.02 18.01 8.74 7.94 8.74 7.19 8.78 6.14 8.99 5.47 9.26 4.96 9.57 4.70 9.77 4.26 10.24 3.90 10.79 3.63 11.41 3.46 12.09 3.36 12.83 3.34 19.00 3.39 19.25 3.58 19.51 3.87 19.65 4.19 19.63 4.47 19.47 4.63 19.19 4.66 19.00 4.66 13.27 4.70 12.64 4.81 12.10 5.06 11.43 5.42 10.92 5.89 10.54 6.29 10.34 6.76 10.19 7.62 10.07 18.01 10.06 14.25 13.83 14.14 14.14 14.15 14.33 14.22 14.51 14.43 14.75 14.61 14.83 14.80 14.86 15.05 14.81 15.27 14.67 20.00 9.93 20.10 9.76 20.15 9.51 20.14 9.16 20.00 8.87 15.27 4.13 14.99 3.97 14.67 3.95 14.43 4.05 14.25 4.23 14.15 4.47 14.15 4.73Z"/>
+  </g>
+</svg>

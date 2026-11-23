@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-mouse-pointer-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-mouse-pointer-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-mouse-pointer-s3-gold-f)">
+    <path fill="url(#isk-mouse-pointer-s3-gold-g)" fill-rule="evenodd" d="M5.31 2.82 5.13 2.75 4.94 2.74 4.76 2.79 4.59 2.88 4.46 3.02 4.37 3.20 4.34 3.39 4.36 3.58 8.73 19.24 8.85 19.47 9.10 19.67 9.36 19.72 9.65 19.69 9.88 19.57 10.07 19.33 12.87 13.17 19.19 11.63 19.41 11.50 19.56 11.30 19.63 11.05 19.62 10.86 19.55 10.68 19.43 10.53 19.08 10.29Z"/>
+  </g>
+</svg>

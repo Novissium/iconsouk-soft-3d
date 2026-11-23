@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-chisel-s3-holo-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bea5f1"/>
+      <stop offset="1" stop-color="#9F7AEA"/>
+    </linearGradient>
+    <filter id="isk-chisel-s3-holo-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-chisel-s3-holo-f)">
+    <path fill="url(#isk-chisel-s3-holo-g)" fill-rule="evenodd" d="M13.33 10.13 5.01 18.46 4.74 18.80 3.73 20.31 3.65 20.48 3.62 20.67 3.67 20.93 3.77 21.09 3.96 21.26 4.13 21.35 4.33 21.38 4.64 21.30 6.47 20.05 14.87 11.67 15.01 11.45 15.06 11.19 15.37 11.50 15.59 11.62 15.91 11.64 16.19 11.52 20.79 6.93 21.08 6.57 21.28 6.21 21.41 5.83 21.46 5.42 21.42 5.02 21.30 4.63 21.10 4.26 20.82 3.90 20.11 3.19 19.79 2.94 19.39 2.71 19.00 2.58 18.59 2.54 18.12 2.60 17.80 2.71 17.48 2.89 17.08 3.20 12.53 7.73 12.42 7.89 12.34 8.20 12.37 8.39 12.45 8.57 13.81 9.94 13.55 9.99Z"/>
+  </g>
+</svg>

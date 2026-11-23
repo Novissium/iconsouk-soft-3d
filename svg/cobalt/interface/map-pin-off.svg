@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-map-pin-off-s3-cobalt-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b95f1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="isk-map-pin-off-s3-cobalt-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-map-pin-off-s3-cobalt-f)">
+    <path fill="url(#isk-map-pin-off-s3-cobalt-g)" fill-rule="evenodd" d="M19.26 12.58 19.69 11.15 19.81 10.45 19.86 9.79 19.77 8.44 19.58 7.47 19.39 6.82 19.04 5.99 18.74 5.46 18.38 4.94 17.98 4.49 17.54 4.09 16.83 3.57 16.26 3.26 15.40 2.90 14.73 2.70 13.73 2.49 12.19 2.35 11.39 2.37 10.29 2.49 9.58 2.62 8.63 2.89 8.00 3.14 7.44 3.42 6.52 4.04 9.92 7.44 10.18 7.19 10.78 6.84 11.16 6.70 11.85 6.58 12.50 6.62 12.89 6.71 13.49 6.97 14.05 7.39 14.33 7.68 14.71 8.27 14.93 8.88 15.00 9.27 15.00 9.97 14.85 10.61 14.69 10.98 14.30 11.56 14.16 11.69 17.80 15.33 18.56 14.07ZM4.23 8.46 4.14 9.50 4.15 10.02 4.37 11.40 4.66 12.35 5.06 13.31 5.57 14.31 6.03 15.08 6.73 16.13 7.54 17.20 8.46 18.29 10.04 20.00 11.65 21.56 11.97 21.66 12.29 21.59 12.45 21.48 15.04 18.86 15.66 18.14 4.55 7.03 4.35 7.77ZM13.09 7.71 12.38 7.45 11.87 7.42 11.37 7.51 11.14 7.60 10.70 7.85 10.51 8.03 10.64 8.16 10.81 8.00 11.21 7.77 11.65 7.64 12.12 7.61 12.79 7.77 13.19 8.00 13.52 8.32 13.66 8.51 13.87 8.92 13.98 9.37 13.98 9.83 13.94 10.06 13.78 10.49 13.44 10.96 13.57 11.09 13.82 10.80 14.05 10.35 14.12 10.10 14.18 9.60 14.12 9.10 13.95 8.62 13.67 8.20 13.30 7.85ZM20.18 21.11 20.41 21.23 20.66 21.26 20.91 21.18 21.11 21.02 21.23 20.79 21.26 20.54 21.21 20.35 21.07 20.13 3.87 2.93 3.65 2.79 3.40 2.74 3.15 2.79 2.93 2.93 2.79 3.15 2.74 3.40 2.79 3.65 2.93 3.87Z"/>
+    <path fill="#1c4ab0" fill-rule="evenodd" d="M13.10 8.68 12.86 8.45 12.57 8.28 12.08 8.16 11.59 8.22 11.28 8.35 11.02 8.54 13.05 10.58 13.20 10.39 13.35 10.09 13.44 9.60 13.35 9.11Z"/>
+  </g>
+</svg>

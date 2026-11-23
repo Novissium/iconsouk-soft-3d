@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-drawing-compass-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-drawing-compass-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-drawing-compass-s3-gold-f)">
+    <path fill="url(#isk-drawing-compass-s3-gold-g)" fill-rule="evenodd" d="M10.40 6.19 7.12 13.92 6.76 13.76 6.44 13.76 6.15 13.91 5.98 14.18 5.95 14.50 6.04 14.74 6.21 14.93 6.61 15.13 4.39 20.34 4.34 20.66 4.45 20.96 4.68 21.18 4.99 21.26 5.31 21.18 5.55 20.97 7.83 15.63 8.77 15.92 9.98 16.19 10.93 16.31 11.85 16.36 13.07 16.31 14.02 16.19 15.23 15.92 16.17 15.63 18.42 20.92 18.59 21.11 18.81 21.23 19.07 21.26 19.32 21.18 19.47 21.06 19.61 20.85 19.66 20.66 19.63 20.40 17.39 15.13 17.79 14.93 17.96 14.74 18.05 14.50 18.02 14.18 17.85 13.91 17.56 13.76 17.24 13.76 16.88 13.92 13.60 6.19 13.90 5.82 14.10 5.44 14.22 5.03 14.26 4.60 14.22 4.17 14.10 3.76 13.90 3.38 13.64 3.04 13.31 2.76 12.94 2.54 12.53 2.40 12.11 2.34 11.68 2.36 11.26 2.46 10.87 2.64 10.47 2.94 10.22 3.20 9.99 3.56 9.83 3.96 9.75 4.45 9.75 4.81 9.83 5.24 10.02 5.69 10.22 6.00Z"/>
+  </g>
+</svg>

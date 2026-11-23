@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-roadwork-sign-s3-holo-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bea5f1"/>
+      <stop offset="1" stop-color="#9F7AEA"/>
+    </linearGradient>
+    <filter id="isk-roadwork-sign-s3-holo-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-roadwork-sign-s3-holo-f)">
+    <path fill="url(#isk-roadwork-sign-s3-holo-g)" fill-rule="evenodd" d="M11.46 2.63 2.12 19.50 2.06 19.67 2.03 19.97 2.05 20.15 2.12 20.33 2.24 20.48 2.39 20.59 2.69 20.66 21.31 20.66 21.49 20.63 21.67 20.55 21.85 20.38 21.95 20.15 21.95 19.72 21.88 19.50 12.54 2.63 12.36 2.45 12.13 2.35 11.94 2.34 11.69 2.42ZM12.62 10.05 12.56 10.42 12.44 10.73 12.21 11.07 11.88 11.36 11.48 11.55 11.61 12.03 14.79 13.22 14.92 13.32 15.01 13.50 15.01 13.71 14.91 13.89 14.74 14.00 14.53 14.01 11.89 13.03 12.39 14.82 14.35 17.77 14.42 17.96 14.40 18.12 14.30 18.30 14.12 18.40 13.92 18.41 13.70 18.30 12.00 15.76 10.32 18.27 10.12 18.40 9.88 18.40 9.70 18.30 9.61 18.16 9.58 17.96 9.63 17.80 11.54 14.93 10.61 11.57 10.29 11.46 9.95 11.24 9.68 10.94 9.49 10.58 9.39 10.15 9.40 9.78 9.49 9.42 9.72 9.01 9.98 8.74 10.29 8.54 10.75 8.40 11.12 8.38 11.45 8.45 11.85 8.62 12.21 8.93 12.43 9.24 12.55 9.55ZM14.48 16.00 17.08 15.99 17.23 16.05 17.35 16.17 17.41 16.32 17.41 16.48 17.30 16.70 17.04 16.82 14.60 16.82 14.37 16.75 14.25 16.63 14.19 16.48 14.19 16.32 14.25 16.17ZM11.75 10.19 11.75 9.81 11.57 9.47 11.24 9.26 11.05 9.22 10.67 9.30 10.50 9.40 10.28 9.71 10.23 9.90 10.28 10.29 10.37 10.46 10.50 10.60 10.85 10.76 11.24 10.74 11.57 10.53ZM11.57 10.15 11.51 10.28 11.31 10.49 11.04 10.58 10.75 10.53 10.53 10.34 10.46 10.22 10.42 9.93 10.46 9.78 10.63 9.55 10.75 9.47 11.04 9.42 11.18 9.44 11.43 9.60 11.51 9.72 11.57 9.85Z"/>
+    <path fill="#775cb0" fill-rule="evenodd" d="M11.03 10.00 11.00 9.97 10.97 10.00 10.99 10.03Z"/>
+  </g>
+</svg>

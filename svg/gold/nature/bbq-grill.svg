@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-bbq-grill-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-bbq-grill-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-bbq-grill-s3-gold-f)">
+    <path fill="url(#isk-bbq-grill-s3-gold-g)" fill-rule="evenodd" d="M16.93 15.69 17.90 15.11 18.34 14.76 18.77 14.35 19.35 13.63 19.67 13.13 19.93 12.61 20.16 12.03 20.36 11.40 20.50 10.76 20.63 9.76 20.59 9.18 20.46 8.97 20.27 8.81 19.96 8.74 4.00 8.74 3.81 8.77 3.64 8.85 3.49 8.98 3.39 9.14 3.34 9.39 3.37 9.80 3.58 11.15 3.95 12.33 4.35 13.16 4.87 13.92 5.46 14.58 6.16 15.15 7.07 15.69 5.36 20.85 5.34 21.05 5.41 21.30 5.57 21.50 5.73 21.60 5.98 21.66 6.24 21.62 6.45 21.48 6.60 21.27 8.30 16.17 9.05 16.37 9.74 16.50 11.34 16.65 11.34 21.06 11.42 21.31 11.53 21.47 11.75 21.61 12.00 21.66 12.25 21.61 12.47 21.47 12.58 21.31 12.66 21.06 12.66 16.65 14.28 16.49 14.99 16.36 15.70 16.17 17.40 21.27 17.55 21.48 17.83 21.64 18.08 21.65 18.33 21.57 18.48 21.45 18.59 21.30 18.66 21.05 18.64 20.85ZM13.23 3.42 12.96 4.13 12.85 4.78 12.85 5.22 12.96 5.87 13.23 6.58 13.50 7.03 13.76 7.21 13.95 7.26 14.14 7.25 14.32 7.18 14.47 7.06 14.58 6.91 14.66 6.66 14.65 3.27 14.55 3.04 14.37 2.85 14.20 2.77 13.95 2.74 13.76 2.79 13.54 2.92ZM10.66 3.34 10.55 3.04 10.42 2.89 10.26 2.79 9.95 2.74 9.64 2.84 9.46 3.02 9.23 3.42 8.98 4.06 8.89 4.42 8.85 5.22 8.89 5.58 9.08 6.23 9.26 6.64 9.50 7.03 9.70 7.19 9.88 7.25 10.14 7.25 10.37 7.15 10.55 6.96 10.65 6.73Z"/>
+  </g>
+</svg>

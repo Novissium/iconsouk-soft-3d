@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-clapperboard-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-clapperboard-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-clapperboard-s3-gold-f)">
+    <path fill="url(#isk-clapperboard-s3-gold-g)" fill-rule="evenodd" d="M3.03 9.75 2.81 10.35 2.74 11.09 2.75 19.28 2.82 19.74 2.99 20.19 3.17 20.48 3.40 20.73 3.74 20.97 4.24 21.17 4.65 21.24 5.03 21.26 19.19 21.25 19.70 21.18 20.04 21.08 20.34 20.92 20.72 20.61 20.96 20.28 21.14 19.85 21.22 19.50 21.26 19.05 21.26 10.91 21.22 10.46 21.12 10.06 20.94 9.69 20.69 9.36 20.37 9.10 20.01 8.91 19.61 8.80 19.16 8.74 10.10 8.74 19.85 7.10 20.36 6.92 20.50 6.79 20.60 6.63 20.65 6.45 20.65 6.26 20.04 2.63 19.92 2.40 19.73 2.23 19.48 2.15 19.29 2.15 2.95 4.90 2.55 5.02 2.34 5.16 2.23 5.31 2.16 5.49 2.15 5.68 2.75 9.31 2.84 9.55ZM13.65 6.88 12.44 4.87 12.42 4.71 12.46 4.55 12.55 4.42 12.70 4.33 12.86 4.31 13.02 4.35 13.15 4.45 14.34 6.42 14.37 6.70 14.24 6.91 14.10 6.99 13.94 7.02 13.78 6.98ZM8.85 7.69 7.65 5.68 7.62 5.52 7.66 5.36 7.76 5.23 7.90 5.14 8.06 5.12 8.22 5.16 8.35 5.25 9.54 7.23 9.58 7.47 9.45 7.72 9.31 7.80 9.14 7.83 8.98 7.79Z"/>
+  </g>
+</svg>

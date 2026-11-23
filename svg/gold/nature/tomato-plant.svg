@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-tomato-plant-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-tomato-plant-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-tomato-plant-s3-gold-f)">
+    <path fill="url(#isk-tomato-plant-s3-gold-g)" fill-rule="evenodd" d="M9.33 14.92 9.03 15.68 8.94 16.44 9.05 17.20 9.17 17.56 9.45 18.08 9.36 19.68 9.34 21.06 9.42 21.31 9.58 21.51 9.81 21.63 10.06 21.66 10.25 21.61 10.42 21.51 10.55 21.37 10.63 21.19 10.70 19.17 11.39 19.40 12.15 19.46 12.61 19.40 13.34 19.15 13.98 18.73 14.45 18.23 14.83 17.56 14.97 17.12 15.06 16.36 14.95 15.60 14.66 14.89 14.26 14.34 13.67 13.84 12.98 13.50 12.23 13.35 11.47 13.39 11.99 11.39 12.73 9.20 13.52 7.36 14.63 5.21 14.66 4.95 14.59 4.70 14.48 4.54 14.27 4.40 14.02 4.34 13.70 4.41 13.50 4.57 13.28 4.93 12.58 6.26 11.96 7.61 11.39 9.01 10.94 10.30 10.66 9.94 10.38 9.67 9.74 9.25 9.31 9.08 8.93 8.99 8.17 8.95 7.42 9.10 6.73 9.44 6.14 9.94 5.74 10.49 5.57 10.84 5.37 11.58 5.34 12.04 5.37 12.42 5.45 12.80 5.70 13.44 6.14 14.06 6.42 14.33 6.80 14.60 7.49 14.92 8.25 15.06 8.93 15.01ZM16.79 8.63 17.02 8.51 17.15 8.37 17.23 8.19 17.26 8.00 17.21 7.75 17.07 7.53 16.85 7.39 16.66 7.34 16.66 2.94 16.58 2.69 16.42 2.49 16.19 2.37 15.94 2.34 15.69 2.42 15.53 2.53 15.42 2.69 15.35 2.87 15.34 7.34 15.15 7.39 14.93 7.53 14.79 7.75 14.74 8.00 14.79 8.25 14.93 8.47 15.15 8.61 15.34 8.66 15.34 21.00 15.39 21.25 15.49 21.42 15.69 21.58 15.94 21.66 16.19 21.63 16.42 21.51 16.58 21.31 16.66 21.06 16.66 8.66Z"/>
+  </g>
+</svg>

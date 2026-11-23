@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-banana-s3-silver-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b6c0cf"/>
+      <stop offset="1" stop-color="#94A3B8"/>
+    </linearGradient>
+    <filter id="isk-banana-s3-silver-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-banana-s3-silver-f)">
+    <path fill="url(#isk-banana-s3-silver-g)" fill-rule="evenodd" d="M3.56 13.50 3.44 13.66 3.35 13.91 3.41 14.47 3.75 15.81 4.24 16.98 4.71 17.78 5.28 18.48 5.94 19.10 6.68 19.61 7.24 19.91 8.12 20.25 9.06 20.49 10.08 20.63 11.16 20.68 12.28 20.64 13.52 20.45 14.42 20.21 15.26 19.89 16.02 19.52 16.76 19.06 17.23 18.69 17.86 18.12 18.44 17.46 18.81 16.96 19.30 16.18 19.72 15.35 20.10 14.44 20.42 13.46 20.68 12.41 20.89 11.29 21.05 10.06 21.03 9.86 20.94 9.68 20.80 9.53 20.62 9.43 21.22 8.24 21.26 8.05 21.23 7.79 21.10 7.57 20.90 7.41 20.58 7.34 20.33 7.40 20.17 7.50 20.04 7.65 19.35 9.02 19.08 8.96 18.89 8.96 18.70 9.02 18.54 9.14 18.39 9.36 18.02 10.46 17.51 11.69 17.07 12.51 16.44 13.45 15.92 14.05 15.17 14.72 14.35 15.24 13.46 15.62 12.74 15.81 12.23 15.89 11.70 15.93 11.02 15.93 9.68 15.78 9.09 15.65 8.31 15.39 7.65 15.05 7.28 14.78 6.95 14.48 6.67 14.14 6.42 13.77 5.96 12.70 5.77 12.52 5.53 12.43 5.27 12.44 4.89 12.55Z"/>
+  </g>
+</svg>

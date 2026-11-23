@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-bluetooth-x-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-bluetooth-x-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-bluetooth-x-s3-gold-f)">
+    <path fill="url(#isk-bluetooth-x-s3-gold-g)" fill-rule="evenodd" d="M11.75 21.49 11.94 21.54 12.21 21.54 12.40 21.47 12.18 21.11 11.90 20.53 11.68 19.92 11.53 19.29 11.43 18.65 11.40 18.00 11.43 17.35 11.53 16.71 11.68 16.08 11.90 15.47 12.18 14.89 12.51 14.33 12.90 13.81 13.33 13.33 14.00 12.76 13.13 12.00 17.77 7.95 17.89 7.78 17.94 7.59 17.89 7.06 17.70 6.79 12.56 2.61 12.40 2.51 12.14 2.46 11.81 2.48 11.58 2.61 11.42 2.80 11.34 3.05 11.34 10.44 6.73 6.43 6.55 6.36 6.36 6.34 6.05 6.44 5.83 6.67 5.74 6.98 5.81 7.29 5.97 7.50 11.13 12.00 5.92 16.55 5.81 16.71 5.75 16.89 5.80 17.27 6.00 17.52 6.23 17.64 6.48 17.65 6.78 17.54 11.34 13.56 11.34 20.95 11.45 21.25 11.58 21.39ZM21.06 21.66 21.25 21.61 21.42 21.51 21.55 21.37 21.65 21.13 21.66 20.94 21.58 20.69 21.47 20.53 18.93 18.00 21.51 15.42 21.63 15.19 21.66 15.00 21.61 14.75 21.51 14.58 21.37 14.45 21.13 14.35 20.87 14.35 20.63 14.45 18.00 17.07 15.42 14.49 15.25 14.39 15.00 14.34 14.75 14.39 14.58 14.49 14.45 14.63 14.35 14.87 14.35 15.13 14.45 15.37 17.07 18.00 14.49 20.58 14.37 20.81 14.34 21.00 14.39 21.25 14.49 21.42 14.69 21.58 14.94 21.66 15.19 21.63 15.37 21.55 18.00 18.93 20.63 21.55 20.81 21.63Z"/>
+  </g>
+</svg>

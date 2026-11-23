@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-can-opener-s3-violet-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b090f9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="isk-can-opener-s3-violet-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-can-opener-s3-violet-f)">
+    <path fill="url(#isk-can-opener-s3-violet-g)" fill-rule="evenodd" d="M12.60 7.27 12.34 6.30 12.01 5.62 11.40 4.82 10.85 4.31 9.99 3.79 9.28 3.52 8.64 3.38 8.24 3.35 7.23 3.40 6.50 3.59 5.90 3.84 5.55 4.04 4.75 4.66 4.26 5.22 3.75 6.09 3.60 6.47 3.43 7.10 3.34 7.85 3.42 8.85 3.60 9.53 3.75 9.91 4.06 10.48 4.48 11.05 4.75 11.34 5.30 11.79 5.85 12.14 6.22 12.31 6.89 12.53 7.53 12.64 7.94 12.66 8.59 12.62 9.28 12.48 9.66 12.35 10.26 12.08 10.79 11.73 19.53 20.47 19.75 20.61 19.94 20.66 20.13 20.65 20.31 20.58 20.51 20.42 20.65 20.13 20.63 19.81 20.51 19.58 11.73 10.79 12.16 10.10 20.98 19.11 21.20 19.23 21.39 19.26 21.58 19.23 21.81 19.11 21.94 18.97 22.05 18.74 22.05 18.48 21.99 18.30 21.87 18.14 12.87 8.94 12.59 8.77 12.66 8.02ZM9.78 8.39 9.65 8.76 9.45 9.10 9.18 9.39 8.89 9.58 8.44 9.76 8.10 9.82 7.66 9.79 7.33 9.69 6.98 9.51 6.68 9.25 6.44 8.94 6.28 8.58 6.19 8.20 6.19 7.80 6.26 7.46 6.44 7.06 6.65 6.78 7.02 6.47 7.33 6.31 7.71 6.20 8.10 6.18 8.49 6.25 8.85 6.39 9.14 6.59 9.47 6.94 9.65 7.24 9.78 7.61 9.82 8.00ZM8.89 7.59 8.63 7.25 8.26 7.06 7.84 7.04 7.45 7.19 7.29 7.33 7.07 7.69 7.03 8.11 7.16 8.50 7.45 8.81 7.84 8.96 8.26 8.94 8.46 8.86 8.78 8.59 8.89 8.41 8.98 8.00ZM8.77 8.17 8.63 8.48 8.37 8.69 8.04 8.79 7.71 8.73 7.56 8.65 7.33 8.41 7.22 8.09 7.25 7.75 7.33 7.59 7.56 7.35 7.87 7.22 8.21 7.24 8.51 7.40 8.71 7.67 8.77 7.83Z"/>
+    <path fill="#6845b8" fill-rule="evenodd" d="M8.23 8.00 8.19 7.86 8.01 7.77 7.83 7.84 7.77 7.97 7.80 8.12 7.96 8.23 8.15 8.18Z"/>
+  </g>
+</svg>

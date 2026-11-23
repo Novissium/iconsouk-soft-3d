@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-equalizer-s3-violet-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b090f9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="isk-equalizer-s3-violet-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-equalizer-s3-violet-f)">
+    <path fill="url(#isk-equalizer-s3-violet-g)" fill-rule="evenodd" d="M16.63 3.81 16.55 3.63 16.37 3.45 16.19 3.37 15.94 3.34 15.69 3.42 15.53 3.53 15.39 3.75 15.34 4.00 15.34 20.00 15.39 20.25 15.53 20.47 15.75 20.61 16.00 20.66 16.25 20.61 16.47 20.47 16.61 20.25 16.66 20.00 16.66 4.00ZM8.63 5.81 8.55 5.63 8.37 5.45 8.19 5.37 7.94 5.34 7.69 5.42 7.49 5.58 7.37 5.81 7.34 6.00 7.34 20.00 7.39 20.25 7.53 20.47 7.75 20.61 8.00 20.66 8.25 20.61 8.47 20.47 8.61 20.25 8.66 20.00 8.66 6.00ZM12.63 9.81 12.55 9.63 12.37 9.45 12.13 9.35 11.94 9.34 11.69 9.42 11.53 9.53 11.42 9.69 11.34 9.94 11.34 20.06 11.42 20.31 11.53 20.47 11.75 20.61 11.94 20.66 12.19 20.63 12.42 20.51 12.58 20.31 12.66 20.06 12.66 10.00ZM4.61 12.75 4.51 12.58 4.37 12.45 4.13 12.35 3.94 12.34 3.69 12.42 3.53 12.53 3.42 12.69 3.34 12.94 3.34 20.06 3.39 20.25 3.53 20.47 3.75 20.61 3.94 20.66 4.19 20.63 4.42 20.51 4.58 20.31 4.66 20.06 4.66 13.00ZM20.61 13.75 20.47 13.53 20.31 13.42 20.13 13.35 19.94 13.34 19.69 13.42 19.53 13.53 19.39 13.75 19.34 13.94 19.34 20.06 19.39 20.25 19.53 20.47 19.75 20.61 19.94 20.66 20.19 20.63 20.42 20.51 20.58 20.31 20.66 20.06 20.66 14.00Z"/>
+  </g>
+</svg>

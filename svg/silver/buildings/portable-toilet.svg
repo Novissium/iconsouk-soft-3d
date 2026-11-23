@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-portable-toilet-s3-silver-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b6c0cf"/>
+      <stop offset="1" stop-color="#94A3B8"/>
+    </linearGradient>
+    <filter id="isk-portable-toilet-s3-silver-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-portable-toilet-s3-silver-f)">
+    <path fill="url(#isk-portable-toilet-s3-silver-g)" fill-rule="evenodd" d="M16.79 21.64 17.25 21.55 17.57 21.42 18.03 21.10 18.25 20.85 18.46 20.49 18.59 20.10 18.64 19.72 18.66 6.64 18.63 6.18 18.51 5.65 18.82 5.51 19.01 5.25 19.06 4.93 18.94 4.63 18.70 4.41 17.51 3.84 16.59 3.47 15.68 3.17 14.77 2.94 13.85 2.77 12.30 2.64 11.39 2.65 10.47 2.73 9.56 2.88 8.64 3.09 7.72 3.36 6.81 3.70 5.24 4.45 5.02 4.68 4.94 4.99 4.99 5.25 5.08 5.41 5.28 5.58 5.49 5.65 5.36 6.28 5.34 6.71 5.34 19.39 5.37 19.82 5.44 20.19 5.59 20.58 5.76 20.87 6.10 21.22 6.45 21.43 6.84 21.57 7.30 21.65ZM9.06 4.34 10.62 4.04 12.00 3.96 13.38 4.04 14.20 4.17 14.94 4.34ZM15.00 9.42 12.42 9.42 12.42 20.19 12.37 20.39 12.23 20.54 12.04 20.61 11.88 20.59 11.68 20.46 11.58 20.19 11.58 9.42 8.92 9.41 8.77 9.35 8.63 9.20 8.58 9.04 8.60 8.88 8.77 8.65 9.00 8.58 15.04 8.58 15.20 8.63 15.32 8.73 15.40 8.88 15.42 9.04 15.30 9.30 15.16 9.39ZM16.40 13.92 16.37 14.23 16.22 14.51 15.98 14.71 15.68 14.80 15.37 14.77 15.09 14.62 14.89 14.38 14.80 14.08 14.83 13.77 14.98 13.49 15.22 13.29 15.52 13.20 15.83 13.23 16.11 13.38 16.31 13.62Z"/>
+  </g>
+</svg>

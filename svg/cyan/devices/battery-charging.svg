@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-battery-charging-s3-cyan-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69cfe4"/>
+      <stop offset="1" stop-color="#22B8D8"/>
+    </linearGradient>
+    <filter id="isk-battery-charging-s3-cyan-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-battery-charging-s3-cyan-f)">
+    <path fill="url(#isk-battery-charging-s3-cyan-g)" fill-rule="evenodd" d="M4.57 6.34 3.82 6.42 3.45 6.52 3.05 6.71 2.79 6.90 2.47 7.21 2.26 7.53 2.11 7.89 2.00 8.31 1.94 9.07 1.94 14.81 1.97 15.53 2.08 16.00 2.19 16.33 2.35 16.61 2.63 16.96 2.92 17.21 3.26 17.40 3.58 17.52 3.97 17.61 4.45 17.66 17.19 17.66 17.97 17.54 18.38 17.38 18.71 17.19 18.95 16.98 19.24 16.63 19.42 16.29 19.54 15.97 19.62 15.57 19.66 15.15 19.65 8.67 19.58 8.19 19.34 7.55 19.10 7.18 18.78 6.87 18.52 6.69 18.12 6.51 17.74 6.41 17.00 6.34ZM12.32 11.58 12.70 11.61 12.90 11.74 13.00 11.96 12.94 12.24 10.31 15.69 10.06 15.82 9.78 15.76 9.66 15.65 9.59 15.50 9.59 15.33 9.64 15.18 11.75 12.42 8.94 12.39 8.79 12.34 8.67 12.22 8.61 12.08 8.61 11.87 8.68 11.73 11.27 8.34 11.50 8.19 11.75 8.21 11.94 8.35 12.02 8.59 11.98 8.79 9.85 11.58ZM20.35 10.27 20.34 13.60 20.37 13.79 20.49 14.02 20.69 14.18 20.94 14.26 21.19 14.23 21.37 14.15 21.51 14.02 21.61 13.85 21.66 13.66 21.66 10.34 21.61 10.15 21.47 9.93 21.25 9.79 21.00 9.74 20.75 9.79 20.53 9.93 20.42 10.09Z"/>
+  </g>
+</svg>

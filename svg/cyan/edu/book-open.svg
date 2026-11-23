@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-book-open-s3-cyan-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69cfe4"/>
+      <stop offset="1" stop-color="#22B8D8"/>
+    </linearGradient>
+    <filter id="isk-book-open-s3-cyan-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-book-open-s3-cyan-f)">
+    <path fill="url(#isk-book-open-s3-cyan-g)" fill-rule="evenodd" d="M12.00 5.82 10.83 5.19 9.73 4.75 8.57 4.41 7.35 4.18 6.06 4.05 4.39 4.03 2.94 4.15 2.70 4.25 2.55 4.38 2.43 4.62 2.34 5.04 2.34 17.96 2.44 18.38 2.52 18.56 2.70 18.74 3.00 18.85 4.45 18.75 5.69 18.75 6.87 18.84 7.98 19.03 8.78 19.23 9.79 19.58 10.74 20.02 11.70 20.59 12.00 20.66 12.30 20.59 13.26 20.02 14.21 19.58 15.22 19.23 16.02 19.03 17.13 18.84 18.01 18.77 19.55 18.75 20.93 18.85 21.12 18.82 21.30 18.74 21.44 18.61 21.54 18.44 21.66 17.96 21.66 5.04 21.57 4.62 21.45 4.38 21.25 4.21 21.06 4.15 19.61 4.03 18.25 4.03 16.67 4.18 15.45 4.41 14.56 4.65 13.18 5.19ZM11.58 7.41 11.61 7.25 11.70 7.11 11.84 7.02 12.00 6.99 12.16 7.02 12.30 7.11 12.39 7.25 12.42 7.41 12.42 19.04 12.39 19.20 12.30 19.34 12.16 19.43 12.00 19.46 11.84 19.43 11.70 19.34 11.61 19.20 11.58 19.04Z"/>
+  </g>
+</svg>

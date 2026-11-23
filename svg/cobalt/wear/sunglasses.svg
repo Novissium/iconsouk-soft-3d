@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-sunglasses-s3-cobalt-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b95f1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="isk-sunglasses-s3-cobalt-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-sunglasses-s3-cobalt-f)">
+    <path fill="url(#isk-sunglasses-s3-cobalt-g)" fill-rule="evenodd" d="M21.40 8.74 13.46 8.76 13.23 8.86 13.02 9.09 12.94 9.34 11.06 9.34 11.01 9.15 10.87 8.94 10.66 8.80 10.41 8.75 2.60 8.74 2.41 8.77 2.24 8.85 2.02 9.08 1.94 9.39 2.33 13.94 2.39 14.35 2.56 14.99 2.71 15.37 3.02 15.91 3.46 16.41 3.99 16.83 4.61 17.13 5.35 17.34 6.10 17.44 7.25 17.43 8.02 17.29 8.69 17.04 9.27 16.69 9.72 16.27 10.12 15.72 10.42 15.07 10.54 14.68 10.66 13.98 10.95 10.66 13.05 10.66 13.33 13.95 13.47 14.72 13.72 15.40 14.03 15.95 14.28 16.27 14.73 16.69 15.31 17.04 15.98 17.29 16.71 17.42 17.50 17.46 18.33 17.40 19.05 17.25 19.71 16.99 20.29 16.63 20.73 16.22 21.13 15.68 21.42 15.05 21.61 14.35 22.06 9.46 22.03 9.20 21.91 8.98 21.71 8.82Z"/>
+  </g>
+</svg>

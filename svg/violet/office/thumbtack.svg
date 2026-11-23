@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-thumbtack-s3-violet-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b090f9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="isk-thumbtack-s3-violet-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-thumbtack-s3-violet-f)">
+    <path fill="url(#isk-thumbtack-s3-violet-g)" fill-rule="evenodd" d="M8.29 9.77 5.55 12.52 5.45 12.69 5.40 12.87 5.45 13.19 5.55 13.36 5.70 13.49 6.15 13.66 11.34 13.66 11.34 21.06 11.42 21.31 11.63 21.55 11.94 21.66 12.25 21.61 12.51 21.42 12.61 21.25 12.66 21.06 12.66 13.66 18.02 13.66 18.21 13.61 18.37 13.51 18.53 13.32 18.60 13.14 18.62 12.95 18.57 12.77 18.34 12.42 15.71 9.77 16.63 4.24 16.62 3.97 16.50 3.73 16.15 3.42 15.83 3.34 8.00 3.34 7.81 3.37 7.59 3.48 7.40 3.73 7.34 4.05Z"/>
+  </g>
+</svg>

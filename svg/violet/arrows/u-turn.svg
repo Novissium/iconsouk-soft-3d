@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-u-turn-s3-violet-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b090f9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="isk-u-turn-s3-violet-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-u-turn-s3-violet-f)">
+    <path fill="url(#isk-u-turn-s3-violet-g)" fill-rule="evenodd" d="M6.68 9.41 6.83 8.20 6.97 7.67 7.25 6.97 7.48 6.57 7.75 6.21 8.22 5.74 8.58 5.47 9.22 5.14 9.70 4.97 10.81 4.73 11.44 4.67 12.46 4.67 13.69 4.81 14.23 4.94 14.72 5.11 15.15 5.32 15.73 5.69 16.21 6.15 16.48 6.51 16.72 6.91 16.92 7.36 17.08 7.85 17.21 8.40 17.32 9.31 17.34 14.61 14.87 12.13 14.71 12.02 14.53 11.95 14.34 11.94 14.15 11.99 13.98 12.09 13.85 12.23 13.77 12.41 13.74 12.60 13.77 12.79 13.93 13.07 17.42 16.56 17.64 16.70 17.89 16.75 18.24 16.74 18.53 16.60 22.07 13.07 22.18 12.91 22.25 12.73 22.26 12.54 22.21 12.35 22.11 12.18 21.97 12.05 21.79 11.97 21.60 11.94 21.29 12.02 21.13 12.13 18.66 14.61 18.65 9.59 18.56 8.51 18.43 7.81 18.26 7.20 18.03 6.60 17.56 5.76 16.98 5.05 16.53 4.65 16.07 4.32 15.49 4.01 14.58 3.67 13.59 3.45 12.51 3.35 11.36 3.36 10.28 3.48 9.29 3.71 8.43 4.05 7.86 4.37 7.36 4.73 6.92 5.15 6.54 5.61 6.21 6.13 5.82 6.95 5.63 7.58 5.48 8.27 5.38 8.98 5.34 9.72 5.34 20.00 5.37 20.19 5.49 20.42 5.63 20.55 5.87 20.65 6.13 20.65 6.37 20.55 6.58 20.31 6.66 20.06Z"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-water-glass-plus-s3-pink-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f385a7"/>
+      <stop offset="1" stop-color="#EE4B7E"/>
+    </linearGradient>
+    <filter id="isk-water-glass-plus-s3-pink-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-water-glass-plus-s3-pink-f)">
+    <path fill="url(#isk-water-glass-plus-s3-pink-g)" fill-rule="evenodd" d="M18.75 3.15 18.45 2.99 18.20 2.94 5.60 2.94 5.35 2.99 5.13 3.13 4.97 3.41 4.94 3.67 6.52 18.89 6.69 19.67 6.86 20.05 7.10 20.39 7.41 20.66 7.83 20.89 8.22 21.00 8.94 21.06 12.16 21.06 11.90 20.53 11.68 19.92 11.53 19.29 11.43 18.65 11.40 18.00 11.43 17.35 11.53 16.71 11.68 16.08 11.90 15.47 12.18 14.89 12.51 14.33 12.90 13.81 13.33 13.33 13.81 12.90 14.33 12.51 14.89 12.18 15.47 11.90 16.08 11.68 16.71 11.53 17.35 11.43 18.25 11.41 19.05 3.70 19.00 3.45 18.90 3.28ZM6.64 9.62 6.61 9.33 6.68 9.19 6.80 9.07 7.38 8.87 8.03 8.71 9.28 8.58 10.19 8.64 10.83 8.75 11.72 9.03 12.84 9.48 13.37 9.63 13.91 9.73 14.72 9.78 15.27 9.75 16.10 9.60 16.96 9.36 17.12 9.40 17.25 9.50 17.36 9.76 17.34 9.92 17.26 10.06 17.12 10.16 16.92 10.23 16.31 10.41 15.68 10.54 14.72 10.62 13.81 10.56 13.17 10.45 12.56 10.28 10.89 9.64 10.36 9.51 9.82 9.44 9.01 9.43 8.46 9.49 7.90 9.60 7.00 9.85 6.84 9.81ZM17.58 22.11 17.75 22.21 17.94 22.26 18.19 22.23 18.37 22.15 18.51 22.02 18.61 21.85 18.66 21.60 18.66 18.66 21.73 18.65 21.97 18.55 22.11 18.42 22.21 18.25 22.26 18.06 22.23 17.81 22.11 17.58 21.97 17.45 21.73 17.35 18.66 17.34 18.65 14.27 18.55 14.03 18.42 13.89 18.25 13.79 18.06 13.74 17.81 13.77 17.58 13.89 17.45 14.03 17.35 14.27 17.34 17.34 14.27 17.35 14.03 17.45 13.89 17.58 13.79 17.75 13.74 17.94 13.77 18.19 13.89 18.42 14.03 18.55 14.27 18.65 17.34 18.66 17.35 21.73 17.45 21.97Z"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-layers-s3-silver-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b6c0cf"/>
+      <stop offset="1" stop-color="#94A3B8"/>
+    </linearGradient>
+    <filter id="isk-layers-s3-silver-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-layers-s3-silver-f)">
+    <path fill="url(#isk-layers-s3-silver-g)" fill-rule="evenodd" d="M12.24 2.39 12.00 2.34 11.70 2.41 2.78 6.98 2.59 7.16 2.49 7.40 2.48 7.73 2.55 7.98 2.67 8.14 2.83 8.26 11.70 12.79 12.00 12.86 12.30 12.79 21.17 8.26 21.41 8.04 21.51 7.80 21.51 7.40 21.41 7.16 21.22 6.98ZM2.64 12.56 11.57 17.12 11.80 17.19 12.20 17.19 12.43 17.12 21.30 12.59 21.46 12.48 21.58 12.32 21.64 12.14 21.66 11.95 21.56 11.64 21.32 11.42 21.01 11.34 20.76 11.39 12.00 15.86 3.30 11.41 2.99 11.34 2.80 11.37 2.62 11.46 2.44 11.64 2.35 11.88 2.36 12.14 2.46 12.38ZM2.64 16.96 11.57 21.52 11.80 21.59 12.20 21.59 12.43 21.52 21.30 16.99 21.46 16.88 21.58 16.72 21.64 16.54 21.66 16.35 21.56 16.04 21.32 15.82 21.01 15.74 20.76 15.79 12.00 20.26 3.30 15.81 2.99 15.74 2.80 15.77 2.62 15.86 2.44 16.04 2.35 16.28 2.36 16.54 2.46 16.78Z"/>
+  </g>
+</svg>

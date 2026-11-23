@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-smartphone-off-s3-cobalt-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b95f1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="isk-smartphone-off-s3-cobalt-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-smartphone-off-s3-cobalt-f)">
+    <path fill="url(#isk-smartphone-off-s3-cobalt-g)" fill-rule="evenodd" d="M6.92 2.78 6.48 3.22 6.18 3.71 18.14 15.67 18.16 5.31 18.09 4.55 17.88 3.84 17.53 3.22 17.02 2.73 16.38 2.38 15.64 2.19 14.83 2.14 9.08 2.14 8.33 2.20 7.90 2.29 7.29 2.54ZM5.91 19.45 6.12 20.16 6.47 20.78 6.71 21.04 6.98 21.27 7.62 21.62 8.42 21.82 9.17 21.86 14.92 21.86 15.73 21.79 16.38 21.61 16.78 21.42 17.08 21.22 17.58 20.71 17.81 20.28 5.84 8.31 5.84 18.69ZM10.58 18.04 10.60 17.88 10.68 17.73 10.92 17.59 13.04 17.58 13.30 17.70 13.41 17.92 13.41 18.08 13.35 18.23 13.23 18.35 13.08 18.41 11.00 18.42 10.84 18.39 10.70 18.30ZM20.18 21.11 20.41 21.23 20.66 21.26 20.91 21.18 21.11 21.02 21.23 20.79 21.26 20.54 21.21 20.35 21.07 20.13 3.87 2.93 3.65 2.79 3.40 2.74 3.15 2.79 2.93 2.93 2.79 3.15 2.74 3.40 2.79 3.65 2.93 3.87Z"/>
+  </g>
+</svg>

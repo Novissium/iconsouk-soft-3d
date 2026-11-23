@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-tablet-s3-holo-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bea5f1"/>
+      <stop offset="1" stop-color="#9F7AEA"/>
+    </linearGradient>
+    <filter id="isk-tablet-s3-holo-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-tablet-s3-holo-f)">
+    <path fill="url(#isk-tablet-s3-holo-g)" fill-rule="evenodd" d="M6.17 1.94 5.43 2.01 4.97 2.13 4.39 2.43 4.10 2.66 3.83 2.99 3.62 3.36 3.49 3.71 3.36 4.41 3.34 19.33 3.46 20.19 3.58 20.56 3.75 20.90 4.16 21.39 4.55 21.67 4.88 21.83 5.24 21.95 6.01 22.06 17.83 22.06 18.57 21.99 18.94 21.90 19.34 21.74 19.65 21.54 19.94 21.30 20.14 21.05 20.38 20.64 20.59 19.99 20.66 19.18 20.66 4.67 20.54 3.81 20.42 3.44 20.25 3.10 19.84 2.61 19.45 2.33 18.84 2.07 18.04 1.95ZM10.36 17.58 13.68 17.59 13.83 17.65 13.95 17.77 14.01 17.92 14.01 18.08 13.87 18.32 13.60 18.42 10.36 18.42 10.20 18.37 10.05 18.23 9.99 18.08 9.99 17.92 10.05 17.77 10.17 17.65Z"/>
+  </g>
+</svg>

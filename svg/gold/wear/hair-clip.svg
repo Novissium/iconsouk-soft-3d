@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-hair-clip-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-hair-clip-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-hair-clip-s3-gold-f)">
+    <path fill="url(#isk-hair-clip-s3-gold-g)" fill-rule="evenodd" d="M2.24 10.07 2.00 10.77 1.87 11.49 1.84 12.20 1.92 12.87 2.12 13.62 2.43 14.33 2.65 14.56 2.95 14.66 18.87 14.66 19.46 14.47 20.12 13.81 20.51 13.26 20.66 12.95 20.78 12.62 20.85 12.23 20.86 11.88 20.80 11.49 20.60 10.91 20.38 10.53 19.95 9.99 19.60 9.65 19.18 9.40 18.98 9.34 3.00 9.34 2.76 9.39 2.55 9.52 2.43 9.67ZM5.00 12.42 4.84 12.39 4.70 12.30 4.61 12.16 4.58 12.00 4.61 11.84 4.70 11.70 4.84 11.61 5.00 11.58 17.00 11.58 17.16 11.61 17.30 11.70 17.39 11.84 17.42 12.00 17.39 12.16 17.30 12.30 17.16 12.39 17.00 12.42Z"/>
+  </g>
+</svg>

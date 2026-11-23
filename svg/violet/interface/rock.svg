@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-rock-s3-violet-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b090f9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="isk-rock-s3-violet-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-rock-s3-violet-f)">
+    <path fill="url(#isk-rock-s3-violet-g)" fill-rule="evenodd" d="M2.35 18.52 2.38 18.84 2.53 19.06 2.74 19.21 3.00 19.26 20.76 19.26 21.23 19.15 21.40 19.06 21.53 18.92 21.62 18.74 21.65 18.55 21.06 10.98 21.01 10.78 20.68 10.34 16.63 6.30 16.24 6.00 10.16 4.76 9.97 4.75 9.79 4.79 9.35 5.10 4.70 9.38 4.41 9.76 4.33 9.95ZM9.81 6.47 9.80 6.19 9.88 6.04 10.01 5.94 10.17 5.90 10.33 5.92 10.47 6.00 10.57 6.13 12.01 9.89 11.98 10.17 11.79 10.38 11.63 10.42 11.47 10.40 11.32 10.32 11.22 10.19Z"/>
+  </g>
+</svg>

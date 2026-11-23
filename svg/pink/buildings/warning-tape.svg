@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-warning-tape-s3-pink-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f385a7"/>
+      <stop offset="1" stop-color="#EE4B7E"/>
+    </linearGradient>
+    <filter id="isk-warning-tape-s3-pink-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-warning-tape-s3-pink-f)">
+    <path fill="url(#isk-warning-tape-s3-pink-g)" fill-rule="evenodd" d="M2.74 15.65 21.50 12.65 21.69 12.59 21.90 12.43 22.03 12.20 22.06 12.00 22.06 6.27 21.99 5.79 21.81 5.52 21.53 5.36 21.26 5.35 2.50 8.35 2.19 8.48 1.99 8.74 1.94 9.00 1.94 14.73 1.99 15.14 2.06 15.33 2.19 15.48 2.41 15.62ZM17.17 7.71 14.62 12.60 14.49 12.70 14.33 12.73 14.17 12.70 14.03 12.61 13.94 12.48 13.90 12.31 13.93 12.15 16.43 7.33 16.65 7.16 16.93 7.17 17.07 7.26 17.16 7.39 17.20 7.55ZM12.37 8.48 9.85 13.34 9.61 13.49 9.45 13.49 9.29 13.43 9.18 13.31 9.11 13.16 9.15 12.88 11.61 8.13 11.71 8.00 11.85 7.92 12.14 7.93 12.27 8.02 12.37 8.16 12.40 8.32ZM7.57 9.24 5.05 14.10 4.81 14.25 4.65 14.25 4.50 14.19 4.38 14.08 4.31 13.93 4.35 13.65 6.81 8.90 7.02 8.70 7.18 8.67 7.34 8.70 7.47 8.79 7.57 8.92 7.60 9.08Z"/>
+  </g>
+</svg>

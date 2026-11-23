@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-bow-tie-s3-cobalt-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b95f1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="isk-bow-tie-s3-cobalt-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-bow-tie-s3-cobalt-f)">
+    <path fill="url(#isk-bow-tie-s3-cobalt-g)" fill-rule="evenodd" d="M9.99 14.78 10.19 14.89 10.63 15.03 11.03 15.06 12.85 15.06 13.26 15.05 13.63 14.96 14.03 14.77 20.32 18.19 20.51 18.24 20.70 18.23 20.99 18.10 21.12 17.95 21.21 17.78 21.26 17.33 21.26 6.44 21.23 6.25 21.12 6.03 20.92 5.87 20.68 5.79 20.43 5.80 20.10 5.92 14.03 9.23 13.59 9.02 13.22 8.95 12.82 8.94 10.93 8.94 10.48 9.00 9.97 9.23 3.90 5.92 3.57 5.80 3.38 5.78 3.19 5.81 2.97 5.94 2.79 6.19 2.74 6.44 2.74 17.33 2.79 17.78 2.91 18.01 3.06 18.14 3.24 18.22 3.43 18.25 3.68 18.19ZM14.42 11.39 14.42 12.54 14.39 12.70 14.30 12.84 14.16 12.93 14.00 12.96 13.84 12.93 13.65 12.78 13.58 12.58 13.58 11.43 13.61 11.27 13.80 11.06 14.08 11.02 14.30 11.13ZM10.42 11.57 10.42 12.42 10.37 12.62 10.27 12.74 10.12 12.82 9.96 12.84 9.80 12.79 9.65 12.65 9.58 12.46 9.58 11.61 9.63 11.41 9.84 11.22 10.08 11.20 10.30 11.31Z"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-transfer-s3-rosegold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eab4a5"/>
+      <stop offset="1" stop-color="#E0917A"/>
+    </linearGradient>
+    <filter id="isk-transfer-s3-rosegold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-transfer-s3-rosegold-f)">
+    <path fill="url(#isk-transfer-s3-rosegold-g)" fill-rule="evenodd" d="M18.58 8.31 18.65 8.13 18.66 7.94 18.61 7.75 18.47 7.53 15.07 4.13 14.85 3.99 14.60 3.94 14.29 4.02 14.05 4.23 13.97 4.41 13.94 4.60 14.02 4.91 14.13 5.07 16.41 7.34 3.94 7.34 3.69 7.42 3.49 7.58 3.39 7.75 3.34 8.00 3.39 8.25 3.53 8.47 3.69 8.58 3.94 8.66 16.41 8.66 14.13 10.93 14.02 11.09 13.94 11.40 13.97 11.59 14.05 11.77 14.29 11.98 14.60 12.06 14.85 12.01 15.07 11.87 18.47 8.47ZM7.59 15.34 9.87 13.07 9.98 12.91 10.06 12.66 10.03 12.41 9.91 12.18 9.71 12.02 9.53 11.95 9.27 11.95 9.09 12.02 8.93 12.13 5.53 15.53 5.39 15.75 5.34 16.00 5.39 16.25 5.53 16.47 8.93 19.87 9.09 19.98 9.34 20.06 9.53 20.05 9.71 19.98 9.95 19.77 10.06 19.46 10.05 19.27 9.98 19.09 9.87 18.93 7.59 16.66 20.00 16.66 20.25 16.61 20.42 16.51 20.58 16.31 20.66 16.06 20.63 15.81 20.51 15.58 20.31 15.42 20.06 15.34Z"/>
+  </g>
+</svg>

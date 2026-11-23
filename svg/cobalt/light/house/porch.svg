@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-porch-light-s3-cobalt-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b95f1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="isk-porch-light-s3-cobalt-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-porch-light-s3-cobalt-f)">
+    <path fill="url(#isk-porch-light-s3-cobalt-g)" fill-rule="evenodd" d="M7.45 8.63 7.37 8.81 7.34 9.00 7.34 14.71 7.36 15.09 7.44 15.33 7.65 15.55 7.95 15.66 12.34 15.66 12.34 18.06 12.45 18.37 12.69 18.58 12.94 18.66 13.25 18.61 13.51 18.42 13.63 18.19 13.66 18.00 13.66 15.66 18.05 15.65 18.29 15.55 18.43 15.42 18.53 15.26 18.65 14.91 18.65 8.93 18.57 8.73 18.33 8.40 16.55 6.62 16.14 6.39 15.89 6.34 10.18 6.34 9.70 6.46 9.50 6.57 9.31 6.42 9.06 6.34 5.66 6.34 5.65 2.87 5.55 2.63 5.31 2.42 5.00 2.34 4.69 2.42 4.45 2.63 4.37 2.81 4.34 3.00 4.34 21.00 4.37 21.19 4.49 21.42 4.63 21.55 4.87 21.65 5.13 21.65 5.37 21.55 5.58 21.31 5.66 21.06 5.66 7.66 8.41 7.66ZM13.80 11.08 13.71 11.38 13.51 11.62 13.23 11.77 12.92 11.80 12.62 11.71 12.38 11.51 12.23 11.23 12.20 10.92 12.29 10.62 12.49 10.38 12.77 10.23 13.08 10.20 13.38 10.29 13.62 10.49 13.77 10.77Z"/>
+  </g>
+</svg>

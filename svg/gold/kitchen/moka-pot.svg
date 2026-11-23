@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-moka-pot-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-moka-pot-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-moka-pot-s3-gold-f)">
+    <path fill="url(#isk-moka-pot-s3-gold-g)" fill-rule="evenodd" d="M16.84 11.57 20.67 10.66 20.85 10.59 21.04 10.42 21.16 10.20 21.25 9.82 21.22 9.38 21.08 8.70 20.81 8.08 20.42 7.53 20.13 7.25 19.63 6.90 18.98 6.62 18.25 6.44 17.50 6.36 17.63 5.28 17.61 4.90 17.51 4.65 17.27 4.42 16.95 4.34 14.49 4.34 13.98 2.69 13.77 2.45 13.59 2.37 13.40 2.34 13.15 2.39 12.93 2.53 12.82 2.69 12.74 2.93 12.77 3.19 13.11 4.34 10.89 4.34 11.23 3.19 11.26 2.93 11.18 2.69 11.07 2.53 10.85 2.39 10.60 2.34 10.29 2.42 10.13 2.53 10.02 2.69 9.51 4.34 6.98 4.34 6.79 4.39 6.62 4.50 6.49 4.65 6.41 4.83 6.38 5.33 7.35 13.08 7.40 13.27 7.50 13.43 7.65 13.56 7.80 13.63 6.35 20.87 6.35 21.13 6.49 21.42 6.69 21.58 7.00 21.66 16.94 21.66 17.19 21.61 17.36 21.51 17.49 21.36 17.57 21.18 17.61 20.70 16.20 13.63 16.45 13.48 16.63 13.21ZM15.41 12.38 15.19 12.34 8.87 12.34 8.59 12.37 7.75 5.66 16.25 5.66Z"/>
+  </g>
+</svg>

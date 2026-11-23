@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-boxing-glove-s3-silver-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b6c0cf"/>
+      <stop offset="1" stop-color="#94A3B8"/>
+    </linearGradient>
+    <filter id="isk-boxing-glove-s3-silver-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-boxing-glove-s3-silver-f)">
+    <path fill="url(#isk-boxing-glove-s3-silver-g)" fill-rule="evenodd" d="M6.34 14.01 6.37 14.95 6.44 15.34 6.55 15.71 6.73 16.10 6.94 16.41 7.21 16.68 7.51 16.90 7.87 17.07 7.74 17.66 7.74 19.81 7.78 20.21 7.98 20.76 8.36 21.16 8.77 21.37 9.26 21.46 16.25 21.46 16.66 21.45 17.09 21.35 17.55 21.08 17.80 20.78 17.90 20.59 18.03 20.20 18.06 19.81 18.05 17.53 17.94 17.10 17.75 16.75 18.32 16.31 18.55 16.05 18.78 15.70 18.94 15.39 19.14 14.76 19.25 13.95 19.26 7.54 19.21 6.43 19.08 5.67 18.76 4.75 18.45 4.18 18.05 3.67 17.53 3.21 17.03 2.90 16.68 2.74 15.71 2.45 14.62 2.34 11.22 2.34 10.03 2.45 9.32 2.61 8.68 2.85 8.10 3.17 7.64 3.53 7.37 3.80 6.99 4.32 6.72 4.85 6.51 5.49 6.35 6.56 6.34 8.37 5.75 8.46 5.39 8.56 4.97 8.73 4.65 8.92 4.20 9.34 3.99 9.63 3.82 10.01 3.73 10.41 3.70 11.08 3.76 11.56 3.99 12.30 4.31 12.87 4.61 13.21 5.11 13.60 5.80 13.90ZM7.42 9.81 7.41 12.67 7.35 12.82 7.23 12.94 7.08 13.00 6.92 13.00 6.70 12.89 6.58 12.63 6.59 9.73 6.73 9.49 6.88 9.41 7.04 9.39 7.30 9.51 7.39 9.65Z"/>
+  </g>
+</svg>

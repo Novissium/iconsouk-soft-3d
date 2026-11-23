@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-bluetooth-off-s3-cobalt-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b95f1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="isk-bluetooth-off-s3-cobalt-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-bluetooth-off-s3-cobalt-f)">
+    <path fill="url(#isk-bluetooth-off-s3-cobalt-g)" fill-rule="evenodd" d="M11.75 21.49 11.94 21.54 12.21 21.54 12.51 21.43 16.06 18.54 11.34 13.81 11.34 20.95 11.45 21.25 11.58 21.39ZM17.89 7.78 17.94 7.59 17.89 7.06 17.70 6.79 12.56 2.61 12.40 2.51 12.14 2.46 11.81 2.48 11.58 2.61 11.42 2.80 11.34 3.05 11.34 8.87 13.85 11.37 17.77 7.95ZM5.81 16.71 5.75 16.89 5.75 17.08 5.80 17.27 6.00 17.52 6.23 17.64 6.48 17.65 6.78 17.54 11.20 13.68 10.27 12.75 5.92 16.55ZM20.18 21.11 20.41 21.23 20.66 21.26 20.91 21.18 21.11 21.02 21.23 20.79 21.26 20.54 21.21 20.35 21.07 20.13 3.87 2.93 3.65 2.79 3.40 2.74 3.15 2.79 2.93 2.93 2.79 3.15 2.74 3.40 2.79 3.65 2.93 3.87Z"/>
+  </g>
+</svg>

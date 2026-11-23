@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-soda-can-s3-rosegold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eab4a5"/>
+      <stop offset="1" stop-color="#E0917A"/>
+    </linearGradient>
+    <filter id="isk-soda-can-s3-rosegold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-soda-can-s3-rosegold-f)">
+    <path fill="url(#isk-soda-can-s3-rosegold-g)" fill-rule="evenodd" d="M18.06 5.82 18.01 5.08 17.90 4.63 17.65 4.03 17.44 3.73 17.16 3.43 16.83 3.19 16.24 2.92 15.80 2.81 15.03 2.74 8.56 2.76 7.86 2.89 7.44 3.05 6.90 3.39 6.57 3.71 6.36 4.01 6.10 4.61 5.95 5.44 5.94 18.18 6.01 18.99 6.23 19.72 6.59 20.31 7.09 20.76 7.41 20.94 7.76 21.08 8.59 21.24 15.38 21.25 16.14 21.11 16.56 20.95 17.10 20.61 17.43 20.29 17.64 19.99 17.90 19.39 18.05 18.56ZM16.59 7.02 7.41 7.02 7.25 6.99 7.11 6.90 7.02 6.76 6.99 6.60 7.02 6.44 7.11 6.30 7.25 6.21 7.41 6.18 16.59 6.18 16.75 6.21 16.89 6.30 16.98 6.44 17.01 6.60 16.98 6.76 16.89 6.90 16.75 6.99ZM16.59 17.82 7.41 17.82 7.25 17.79 7.11 17.70 7.02 17.56 6.99 17.40 7.02 17.24 7.11 17.10 7.25 17.01 7.41 16.98 16.59 16.98 16.75 17.01 16.89 17.10 16.98 17.24 17.01 17.40 16.98 17.56 16.89 17.70 16.75 17.79Z"/>
+  </g>
+</svg>

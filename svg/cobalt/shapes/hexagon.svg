@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-hexagon-s3-cobalt-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b95f1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="isk-hexagon-s3-cobalt-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-hexagon-s3-cobalt-f)">
+    <path fill="url(#isk-hexagon-s3-cobalt-g)" fill-rule="evenodd" d="M12.33 2.23 12.03 2.14 11.84 2.16 11.67 2.23 3.85 6.72 3.44 7.14 3.37 7.31 3.34 7.49 3.34 16.51 3.37 16.69 3.44 16.86 3.85 17.28 11.67 21.77 11.97 21.86 12.16 21.84 12.33 21.77 20.15 17.28 20.56 16.86 20.63 16.69 20.66 16.51 20.66 7.49 20.63 7.31 20.56 7.14 20.15 6.72Z"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-messages-check-s3-cyan-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69cfe4"/>
+      <stop offset="1" stop-color="#22B8D8"/>
+    </linearGradient>
+    <filter id="isk-messages-check-s3-cyan-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-messages-check-s3-cyan-f)">
+    <path fill="url(#isk-messages-check-s3-cyan-g)" fill-rule="evenodd" d="M2.59 15.76 2.82 15.90 3.14 15.97 3.46 15.87 7.63 12.66 14.13 12.66 14.89 12.18 15.47 11.90 16.47 11.59 16.59 11.24 16.65 10.77 16.64 4.02 16.53 3.54 16.35 3.18 16.08 2.85 15.70 2.58 15.23 2.41 14.49 2.34 4.10 2.36 3.72 2.42 3.31 2.57 2.98 2.80 2.72 3.08 2.46 3.60 2.37 3.95 2.34 4.40 2.34 15.24 2.37 15.44ZM20.32 9.13 20.34 11.84 21.11 12.18 21.66 12.51 21.66 9.34 21.62 8.88 21.52 8.54 21.31 8.11 21.01 7.79 20.62 7.54 20.21 7.40 19.74 7.34 18.14 7.34 17.95 7.39 17.78 7.49 17.59 7.75 17.54 8.00 17.59 8.25 17.73 8.47 17.95 8.61 18.20 8.66 19.69 8.66 20.06 8.74 20.22 8.86ZM10.20 16.73 9.89 16.63 9.76 16.50 9.67 16.18 9.63 14.21 9.55 14.03 9.42 13.89 9.25 13.79 9.06 13.74 8.81 13.77 8.58 13.89 8.42 14.09 8.34 14.34 8.36 16.33 8.46 16.82 8.59 17.13 8.81 17.43 9.28 17.81 9.60 17.95 10.08 18.04 11.40 18.04 11.43 17.35 11.52 16.74ZM16.56 21.41 16.75 21.46 17.07 21.40 17.29 21.25 22.28 15.85 22.39 15.69 22.45 15.50 22.45 15.31 22.40 15.12 22.20 14.87 21.90 14.75 21.58 14.78 21.36 14.91 16.78 19.85 14.62 17.69 14.39 17.57 14.20 17.54 13.95 17.59 13.73 17.73 13.59 17.95 13.54 18.20 13.57 18.39 13.65 18.57 16.39 21.31Z"/>
+  </g>
+</svg>

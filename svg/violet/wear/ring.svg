@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-ring-s3-violet-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b090f9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="isk-ring-s3-violet-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-ring-s3-violet-f)">
+    <path fill="url(#isk-ring-s3-violet-g)" fill-rule="evenodd" d="M8.59 8.22 7.84 8.70 7.32 9.11 6.85 9.58 6.42 10.08 6.04 10.62 5.71 11.20 5.43 11.83 5.21 12.45 5.06 13.10 4.97 13.75 4.95 14.72 5.01 15.37 5.14 16.06 5.32 16.69 5.57 17.31 5.87 17.90 6.22 18.45 6.63 18.98 7.08 19.46 7.57 19.90 8.11 20.29 8.68 20.63 9.27 20.91 10.18 21.22 10.83 21.36 11.52 21.44 12.18 21.46 12.84 21.41 13.49 21.30 14.13 21.13 15.03 20.78 15.61 20.47 16.19 20.08 16.92 19.46 17.39 18.95 17.98 18.15 18.43 17.31 18.78 16.37 18.94 15.70 19.05 14.75 19.03 13.75 18.87 12.78 18.57 11.83 18.15 10.93 17.60 10.10 16.94 9.36 16.19 8.72 15.41 8.22 16.62 5.61 16.66 5.34 16.58 5.09 14.58 2.66 14.33 2.48 13.81 2.34 10.19 2.34 9.67 2.48 9.42 2.66 7.49 4.98 7.35 5.28 7.35 5.48 7.40 5.67ZM13.90 7.85 14.12 8.02 14.20 8.29 14.08 8.55 13.83 8.67 12.98 8.50 12.14 8.42 11.30 8.46 10.17 8.67 9.92 8.55 9.80 8.29 9.85 8.05 10.03 7.88 10.56 7.73 11.21 7.63 11.85 7.58 12.49 7.60 13.12 7.67Z"/>
+  </g>
+</svg>

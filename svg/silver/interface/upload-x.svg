@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-upload-x-s3-silver-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b6c0cf"/>
+      <stop offset="1" stop-color="#94A3B8"/>
+    </linearGradient>
+    <filter id="isk-upload-x-s3-silver-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-upload-x-s3-silver-f)">
+    <path fill="url(#isk-upload-x-s3-silver-g)" fill-rule="evenodd" d="M11.53 15.97 11.69 16.07 11.90 15.47 12.18 14.89 12.66 14.13 12.66 5.09 16.63 9.05 16.94 9.16 17.13 9.15 17.31 9.08 17.55 8.87 17.63 8.69 17.66 8.50 17.61 8.25 17.47 8.03 12.57 3.14 12.36 3.00 12.11 2.95 11.70 2.97 11.43 3.14 6.53 8.03 6.37 8.31 6.35 8.63 6.45 8.87 6.63 9.05 6.87 9.15 7.13 9.15 7.42 9.01 11.34 5.09 11.34 15.56 11.42 15.81ZM3.81 20.10 4.02 20.35 4.36 20.64 4.71 20.82 5.44 21.02 6.23 21.06 12.16 21.06 11.90 20.53 11.64 19.73 5.94 19.74 5.42 19.67 5.24 19.61 4.98 19.44 4.81 19.20 4.74 19.02 4.66 18.53 4.65 15.37 4.47 15.03 4.31 14.92 4.06 14.84 3.87 14.85 3.63 14.95 3.45 15.13 3.35 15.37 3.35 18.63 3.46 19.36 3.59 19.72ZM21.06 21.66 21.25 21.61 21.42 21.51 21.55 21.37 21.65 21.13 21.66 20.94 21.58 20.69 21.47 20.53 18.93 18.00 21.51 15.42 21.63 15.19 21.66 15.00 21.61 14.75 21.51 14.58 21.37 14.45 21.13 14.35 20.87 14.35 20.63 14.45 18.00 17.07 15.42 14.49 15.25 14.39 15.00 14.34 14.75 14.39 14.58 14.49 14.45 14.63 14.35 14.87 14.35 15.13 14.45 15.37 17.07 18.00 14.49 20.58 14.37 20.81 14.34 21.00 14.39 21.25 14.49 21.42 14.69 21.58 14.94 21.66 15.19 21.63 15.37 21.55 18.00 18.93 20.63 21.55 20.81 21.63Z"/>
+  </g>
+</svg>

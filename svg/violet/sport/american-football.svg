@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-american-football-s3-violet-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b090f9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="isk-american-football-s3-violet-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-american-football-s3-violet-f)">
+    <path fill="url(#isk-american-football-s3-violet-g)" fill-rule="evenodd" d="M2.96 20.55 3.03 20.74 3.16 20.89 3.45 21.04 4.58 21.18 5.64 21.27 7.01 21.30 8.31 21.24 9.57 21.10 10.50 20.93 11.67 20.62 12.52 20.34 13.34 20.00 14.13 19.61 14.89 19.16 15.62 18.67 16.32 18.13 17.00 17.52 17.83 16.67 18.40 15.99 18.91 15.27 19.38 14.53 19.80 13.75 20.17 12.94 20.48 12.11 20.74 11.24 20.96 10.35 21.12 9.42 21.23 8.47 21.30 7.17 21.28 5.82 21.17 4.41 21.07 3.63 21.00 3.46 20.89 3.31 20.59 3.03 20.37 2.93 19.23 2.80 17.84 2.71 16.51 2.71 15.52 2.77 14.27 2.93 13.35 3.11 12.19 3.42 11.34 3.72 10.53 4.07 9.74 4.46 8.98 4.92 8.26 5.42 7.56 5.97 6.90 6.57 6.27 7.22 5.70 7.89 5.17 8.60 4.69 9.35 4.27 10.12 3.89 10.92 3.57 11.75 3.30 12.61 3.07 13.50 2.91 14.42 2.79 15.36 2.72 16.34 2.73 18.37 2.82 19.42ZM12.70 11.89 11.89 12.70 12.39 13.24 12.41 13.48 12.27 13.72 12.08 13.81 11.84 13.79 11.30 13.29 9.63 14.95 9.48 15.01 9.32 15.01 9.08 14.87 8.98 14.60 9.08 14.33 10.71 12.70 10.21 12.16 10.19 11.92 10.28 11.73 10.52 11.59 10.76 11.61 11.30 12.11 12.11 11.30 11.61 10.76 11.59 10.52 11.70 10.30 11.92 10.19 12.16 10.21 12.70 10.71 14.33 9.08 14.60 8.98 14.87 9.08 15.01 9.32 15.01 9.48 14.95 9.63 13.29 11.30 13.79 11.84 13.81 12.08 13.72 12.27 13.48 12.41 13.24 12.39Z"/>
+  </g>
+</svg>

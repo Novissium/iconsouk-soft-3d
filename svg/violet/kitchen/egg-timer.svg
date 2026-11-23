@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-egg-timer-s3-violet-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b090f9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="isk-egg-timer-s3-violet-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-egg-timer-s3-violet-f)">
+    <path fill="url(#isk-egg-timer-s3-violet-g)" fill-rule="evenodd" d="M17.00 2.34 6.94 2.34 6.69 2.42 6.49 2.58 6.39 2.75 6.34 3.00 6.37 3.19 6.49 3.42 6.69 3.58 6.94 3.66 7.35 3.66 7.47 5.27 7.72 6.58 7.97 7.48 8.18 8.07 8.70 9.18 9.17 9.97 9.71 10.70 10.31 11.39 10.95 12.00 10.12 12.82 9.53 13.52 9.02 14.27 8.56 15.09 8.07 16.23 7.71 17.44 7.47 18.73 7.35 20.34 6.87 20.35 6.69 20.42 6.53 20.53 6.39 20.75 6.34 20.94 6.35 21.13 6.42 21.31 6.63 21.55 6.81 21.63 7.00 21.66 17.00 21.66 17.31 21.58 17.51 21.42 17.61 21.25 17.66 21.06 17.63 20.81 17.51 20.58 17.31 20.42 17.06 20.34 16.65 20.34 16.57 19.05 16.36 17.76 16.03 16.52 15.69 15.63 15.15 14.55 14.65 13.77 13.90 12.83 13.05 12.00 13.88 11.18 14.47 10.48 14.98 9.73 15.44 8.91 15.93 7.77 16.29 6.56 16.53 5.27 16.65 3.66 17.13 3.65 17.31 3.58 17.47 3.47 17.61 3.25 17.66 3.06 17.65 2.87 17.58 2.69 17.47 2.53 17.31 2.42Z"/>
+  </g>
+</svg>

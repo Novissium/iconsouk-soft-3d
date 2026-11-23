@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-allen-key-s3-rosegold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eab4a5"/>
+      <stop offset="1" stop-color="#E0917A"/>
+    </linearGradient>
+    <filter id="isk-allen-key-s3-rosegold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-allen-key-s3-rosegold-f)">
+    <path fill="url(#isk-allen-key-s3-rosegold-g)" fill-rule="evenodd" d="M9.00 2.34 8.75 2.39 8.53 2.53 8.39 2.75 8.34 3.00 8.34 16.90 8.41 18.00 8.55 18.70 8.77 19.34 9.09 19.92 9.53 20.47 9.77 20.68 10.26 21.03 10.91 21.33 11.93 21.59 13.04 21.66 20.60 21.66 20.79 21.63 20.97 21.55 21.15 21.37 21.26 21.06 21.26 17.60 21.23 17.41 21.15 17.23 20.91 17.02 20.60 16.94 13.37 16.94 13.12 16.86 13.06 16.60 13.06 3.00 13.03 2.81 12.95 2.63 12.82 2.49 12.65 2.39 12.46 2.34Z"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-air-conditioner-check-s3-violet-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b090f9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="isk-air-conditioner-check-s3-violet-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-air-conditioner-check-s3-violet-f)">
+    <path fill="url(#isk-air-conditioner-check-s3-violet-g)" fill-rule="evenodd" d="M2.27 4.53 2.11 4.88 2.00 5.31 1.94 6.07 1.96 11.03 2.12 11.73 2.30 12.12 2.56 12.48 2.79 12.71 3.11 12.92 3.46 13.08 3.80 13.18 4.62 13.26 13.41 13.26 13.81 12.90 14.33 12.51 14.89 12.18 15.47 11.90 16.08 11.68 16.71 11.53 17.35 11.43 18.00 11.40 18.65 11.43 19.29 11.53 19.92 11.68 20.53 11.90 21.11 12.18 21.50 12.41 21.73 12.07 21.90 11.67 22.05 10.90 22.04 5.57 21.88 4.87 21.70 4.48 21.44 4.12 21.21 3.89 20.89 3.68 20.54 3.52 20.20 3.42 19.38 3.34 4.57 3.34 3.82 3.42 3.45 3.52 3.06 3.71 2.79 3.89 2.48 4.21ZM5.21 9.44 5.30 9.30 5.44 9.21 5.60 9.18 18.40 9.18 18.56 9.21 18.70 9.30 18.79 9.44 18.82 9.60 18.79 9.76 18.70 9.90 18.56 9.99 18.40 10.02 5.60 10.02 5.44 9.99 5.30 9.90 5.21 9.76 5.18 9.60ZM6.74 20.21 6.99 20.26 7.24 20.21 7.41 20.12 7.54 19.98 7.64 19.74 8.66 15.08 8.61 14.76 8.43 14.50 8.20 14.37 7.95 14.34 7.70 14.41 7.50 14.57 7.37 14.80 6.34 19.59 6.39 19.84 6.53 20.06ZM11.81 20.63 11.96 20.65 11.68 19.92 11.53 19.29 11.43 18.65 11.40 18.00 11.43 17.35 11.53 16.71 11.68 16.08 11.90 15.47 12.18 14.89 12.42 14.49 12.31 14.42 12.06 14.34 11.81 14.37 11.58 14.49 11.42 14.69 11.34 14.94 11.34 20.00 11.37 20.19 11.49 20.42 11.63 20.55ZM16.56 21.41 16.75 21.46 17.07 21.40 17.29 21.25 22.28 15.85 22.39 15.69 22.45 15.50 22.45 15.31 22.40 15.12 22.20 14.87 21.90 14.75 21.58 14.78 21.36 14.91 16.78 19.85 14.62 17.69 14.39 17.57 14.20 17.54 13.95 17.59 13.73 17.73 13.59 17.95 13.54 18.20 13.57 18.39 13.65 18.57 16.39 21.31Z"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-video-off-s3-gold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebc26f"/>
+      <stop offset="1" stop-color="#E2A62B"/>
+    </linearGradient>
+    <filter id="isk-video-off-s3-gold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-video-off-s3-gold-f)">
+    <path fill="url(#isk-video-off-s3-gold-g)" fill-rule="evenodd" d="M3.25 6.52 3.00 6.78 2.76 7.12 2.50 7.72 2.40 8.16 2.34 8.93 2.34 14.97 2.38 15.70 2.55 16.44 2.75 16.86 3.13 17.36 3.48 17.65 3.80 17.84 4.43 18.06 5.27 18.16 13.79 18.16 14.63 18.04 15.30 17.78 3.73 6.20ZM20.79 16.78 21.05 16.76 21.36 16.60 21.55 16.42 21.63 16.25 21.66 16.05 21.66 7.95 21.58 7.63 21.36 7.40 20.99 7.23 20.79 7.22 20.59 7.28 16.66 9.57 16.64 8.49 16.48 7.66 16.34 7.31 16.00 6.78 15.70 6.48 15.36 6.25 14.76 5.99 14.31 5.89 13.55 5.84 8.32 5.85 17.25 14.77 20.59 16.72ZM20.18 21.11 20.41 21.23 20.66 21.26 20.91 21.18 21.11 21.02 21.23 20.79 21.26 20.54 21.21 20.35 21.07 20.13 3.87 2.93 3.65 2.79 3.40 2.74 3.15 2.79 2.93 2.93 2.79 3.15 2.74 3.40 2.79 3.65 2.93 3.87Z"/>
+  </g>
+</svg>

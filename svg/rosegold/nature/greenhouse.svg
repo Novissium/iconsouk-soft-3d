@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-greenhouse-s3-rosegold-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eab4a5"/>
+      <stop offset="1" stop-color="#E0917A"/>
+    </linearGradient>
+    <filter id="isk-greenhouse-s3-rosegold-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-greenhouse-s3-rosegold-f)">
+    <path fill="url(#isk-greenhouse-s3-rosegold-g)" fill-rule="evenodd" d="M21.66 11.03 21.58 9.71 21.34 8.51 21.03 7.65 20.79 7.15 20.49 6.66 19.94 5.96 19.54 5.55 19.11 5.20 18.35 4.69 17.25 4.17 15.98 3.77 14.57 3.50 13.02 3.36 11.33 3.35 9.75 3.46 8.31 3.70 7.01 4.07 5.86 4.58 5.11 5.03 4.63 5.41 4.03 5.99 3.67 6.43 3.33 6.94 2.95 7.69 2.74 8.27 2.51 9.13 2.38 10.07 2.34 11.07 2.34 21.00 2.42 21.31 2.63 21.55 2.81 21.63 3.00 21.66 20.74 21.66 21.30 21.55 21.46 21.43 21.58 21.28 21.66 20.96ZM20.19 12.42 12.42 12.42 12.42 20.23 12.30 20.49 12.16 20.58 12.00 20.61 11.84 20.58 11.70 20.49 11.58 20.23 11.58 12.42 3.77 12.42 3.51 12.30 3.42 12.16 3.39 12.00 3.42 11.84 3.51 11.70 3.77 11.58 11.58 11.58 11.58 4.77 11.70 4.51 11.84 4.42 12.00 4.39 12.16 4.42 12.30 4.51 12.42 4.77 12.42 11.58 20.23 11.58 20.49 11.70 20.58 11.84 20.61 12.00 20.58 12.16 20.49 12.30 20.35 12.39Z"/>
+  </g>
+</svg>

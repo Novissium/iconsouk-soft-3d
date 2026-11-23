@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-battery-info-s3-cyan-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69cfe4"/>
+      <stop offset="1" stop-color="#22B8D8"/>
+    </linearGradient>
+    <filter id="isk-battery-info-s3-cyan-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-battery-info-s3-cyan-f)">
+    <path fill="url(#isk-battery-info-s3-cyan-g)" fill-rule="evenodd" d="M3.06 7.61 2.79 7.94 2.51 8.53 2.40 8.99 2.34 9.75 2.36 14.72 2.50 15.42 2.65 15.82 3.05 16.38 3.38 16.66 3.70 16.85 4.01 16.98 4.39 17.08 4.86 17.15 11.46 17.16 11.53 16.71 11.68 16.08 11.90 15.47 12.18 14.89 12.51 14.33 12.90 13.81 13.33 13.33 13.81 12.90 14.33 12.51 14.89 12.18 15.47 11.90 16.08 11.68 16.71 11.53 17.35 11.43 18.00 11.40 18.65 11.43 18.65 9.34 18.58 8.87 18.35 8.18 17.95 7.62 17.62 7.34 16.99 7.02 16.61 6.92 16.14 6.85 5.17 6.84 4.42 6.91 4.05 7.00 3.66 7.16 3.34 7.36ZM6.42 10.59 6.58 10.59 6.80 10.70 6.92 10.96 6.91 13.08 6.77 13.32 6.62 13.40 6.46 13.42 6.20 13.30 6.11 13.16 6.08 13.00 6.09 10.92 6.15 10.77 6.27 10.65ZM9.27 10.65 9.42 10.59 9.58 10.59 9.80 10.70 9.92 10.96 9.91 13.08 9.85 13.23 9.73 13.35 9.46 13.42 9.20 13.30 9.11 13.16 9.08 13.00 9.09 10.92 9.15 10.77ZM20.53 11.90 21.26 12.27 21.26 10.44 21.21 10.25 21.07 10.03 20.85 9.89 20.60 9.84 20.35 9.89 20.13 10.03 19.95 10.37 19.95 11.69ZM18.53 13.81 18.19 13.67 17.81 13.67 17.47 13.81 17.21 14.07 17.07 14.41 17.07 14.79 17.21 15.13 17.47 15.39 17.81 15.53 18.19 15.53 18.53 15.39 18.79 15.13 18.93 14.79 18.93 14.41 18.79 14.07ZM18.55 17.23 18.42 17.09 18.25 16.99 18.00 16.94 17.75 16.99 17.58 17.09 17.45 17.23 17.35 17.47 17.34 21.86 17.39 22.05 17.49 22.22 17.63 22.35 17.87 22.45 18.13 22.45 18.37 22.35 18.55 22.17 18.65 21.93 18.65 17.47Z"/>
+  </g>
+</svg>

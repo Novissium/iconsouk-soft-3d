@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-franc-s3-cyan-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69cfe4"/>
+      <stop offset="1" stop-color="#22B8D8"/>
+    </linearGradient>
+    <filter id="isk-franc-s3-cyan-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-franc-s3-cyan-f)">
+    <path fill="url(#isk-franc-s3-cyan-g)" fill-rule="evenodd" d="M15.13 12.05 15.37 11.95 15.51 11.82 15.61 11.65 15.66 11.40 15.61 11.15 15.51 10.98 15.37 10.85 15.13 10.75 8.66 10.74 8.66 4.66 16.86 4.66 17.05 4.61 17.22 4.51 17.41 4.25 17.46 3.94 17.41 3.75 17.31 3.58 17.05 3.39 16.80 3.34 8.03 3.34 7.78 3.39 7.56 3.53 7.45 3.69 7.38 3.87 7.34 4.27 7.34 15.34 5.00 15.34 4.81 15.37 4.58 15.49 4.42 15.69 4.34 16.00 4.39 16.25 4.49 16.42 4.63 16.55 4.94 16.66 7.34 16.66 7.35 20.13 7.49 20.42 7.69 20.58 7.94 20.66 8.25 20.61 8.51 20.42 8.61 20.25 8.66 20.06 8.66 16.66 12.13 16.65 12.37 16.55 12.51 16.42 12.61 16.25 12.66 16.00 12.61 15.75 12.51 15.58 12.37 15.45 12.13 15.35 8.66 15.34 8.66 12.06Z"/>
+  </g>
+</svg>

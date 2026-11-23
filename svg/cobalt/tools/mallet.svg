@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-mallet-s3-cobalt-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b95f1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="isk-mallet-s3-cobalt-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-mallet-s3-cobalt-f)">
+    <path fill="url(#isk-mallet-s3-cobalt-g)" fill-rule="evenodd" d="M6.02 3.35 5.19 3.51 4.84 3.65 4.51 3.83 4.00 4.27 3.77 4.61 3.60 4.93 3.40 5.65 3.34 6.41 3.35 8.93 3.46 9.64 3.57 9.99 3.77 10.40 4.20 10.93 4.76 11.32 5.18 11.49 5.54 11.58 6.28 11.66 8.91 11.66 8.82 11.92 8.76 12.30 8.74 12.74 8.74 19.36 8.76 19.80 8.86 20.22 9.03 20.59 9.29 20.93 9.66 21.20 10.06 21.37 10.49 21.45 11.20 21.46 11.65 21.43 12.07 21.32 12.48 21.11 12.84 20.78 13.06 20.42 13.18 20.08 13.24 19.70 13.26 12.64 13.24 12.20 13.09 11.66 14.79 11.66 15.63 11.54 16.25 11.31 16.56 11.13 16.87 10.86 17.14 10.54 17.46 9.90 17.56 9.54 17.65 8.82 17.66 6.28 17.58 5.55 17.46 5.11 17.16 4.48 16.93 4.20 16.66 3.95 16.32 3.73 15.99 3.57 15.27 3.39 14.52 3.34Z"/>
+  </g>
+</svg>

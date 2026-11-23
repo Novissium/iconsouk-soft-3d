@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="isk-slipper-s3-pink-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f385a7"/>
+      <stop offset="1" stop-color="#EE4B7E"/>
+    </linearGradient>
+    <filter id="isk-slipper-s3-pink-f" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".4"/>
+      <feOffset dy=".5"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="hi"/>
+      <feFlood flood-color="#fff" flood-opacity=".55"/>
+      <feComposite in2="hi" operator="in" result="hc"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation=".6"/>
+      <feOffset dy=".8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="hc"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#isk-slipper-s3-pink-f)">
+    <path fill="url(#isk-slipper-s3-pink-g)" fill-rule="evenodd" d="M9.24 8.34 8.21 8.37 7.24 8.50 6.59 8.67 5.76 8.99 5.20 9.29 4.51 9.80 4.06 10.25 3.54 10.94 3.24 11.47 2.97 12.08 2.67 13.01 2.52 13.71 2.36 15.20 2.34 17.99 2.18 18.09 2.05 18.23 1.94 18.54 1.99 18.85 2.18 19.11 2.35 19.21 2.60 19.26 21.40 19.26 21.65 19.21 21.91 19.02 22.03 18.79 22.06 18.54 21.95 18.23 21.82 18.09 21.66 17.99 21.64 14.37 21.58 13.62 21.39 12.64 21.08 11.72 20.79 11.12 20.27 10.37 19.66 9.75 19.14 9.37 18.32 8.93 17.43 8.63 16.42 8.43 15.30 8.34ZM20.34 16.66 20.34 17.94 3.66 17.94 3.66 16.66ZM9.23 10.11 9.12 9.89 9.16 9.61 9.33 9.44 9.61 9.40 9.80 9.49 10.50 10.12 10.95 10.40 11.59 10.64 12.21 10.67 12.84 10.50 13.28 10.27 13.73 9.93 14.20 9.49 14.35 9.41 14.55 9.40 14.70 9.46 14.82 9.58 14.89 9.77 14.86 9.97 14.77 10.11 14.26 10.58 13.74 10.97 13.43 11.15 12.90 11.38 12.27 11.51 11.98 11.52 11.43 11.46 10.82 11.27 10.01 10.80Z"/>
+  </g>
+</svg>
